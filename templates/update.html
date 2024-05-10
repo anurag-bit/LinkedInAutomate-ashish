@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>Post Automation</title>
+  </head>
+
+  <body class="container">
+    <div class="header">
+      <h1>Post Automation</h1>
+    </div>
+
+    <div class="form_container">
+      <form class="post_details" method="POST" enctype="multipart/form-data">
+        <label for="title">Title</label>
+        <input required type="text" class="title" name="title" placeholder="Project Title" />
+        <label>Post Text</label>
+        <textarea  placeholder="LinkedIn post text" name="posttext"></textarea>
+        <label for="github">Github Link</label> 
+        <input type="text" class="title" name="github" placeholder = "Paste your github link" />
+        <label for="github">LinkedIn</label> 
+        <input type="text" class="title" name="linkedin" placeholder = "Paste your LinkedIn link" />
+        <label for="imagepath">Upload Images</label>
+        <input type="file" class="files" name="imagepath"  multiple/>
+        </div>
+        <div class="buttons">
+          <button type="submit" formaction="/update"><h3>Update</h3></button>
+        </div>
+      </form>
+    
+  </body>
+</html>
